@@ -1,24 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/canada-1899328_1920.jpg");
+    background-size: stretch;
+    background-repeat: no-repeat;
 }
 
+.title{
+    padding-left: 25px;
+}
 .navigator{
-    font-weight: bold;
+    display: inline-block;
     list-style: none;
-    margin: 0;
-    padding: 8px;
-    background-color: aliceblue;
+    margin: 0px;
     width: 10%;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
     text-align: center;
-        font-size: 16pt;
+    font-size: 16pt;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+        margin: 0;
+        padding: 0;
+        color: white;
+}
+
+.navigator:hover{
+    background-color: #8C8F97;
+}
+
+.current{
+    text-decoration: underline;
 }
 
 ul{
-    background-color: blue;
+    background-color: #43454D;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 @media(max-width: 800px){
