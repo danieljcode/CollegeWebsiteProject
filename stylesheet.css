@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-size: stretch;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #43454D;
     overflow-x: hidden;
 }
 
@@ -69,15 +69,17 @@ a {
     outline: none;
     border: 2px solid white;
     border-radius: 100px;
-        font-weight: bold;
-        font-size: 12pt;
+    font-weight: bold;
+    font-size: 12pt;
 }
 
-#reviewsBtn:hover, #aboutBtn:hover{
+#reviewsBtn:hover,
+#aboutBtn:hover {
     background-color: rgba(255, 255, 255, 0.349);
     border: 2px solid rgba(255, 255, 255, 0.459);
     font-weight: bold;
 }
+
 .title {
     display: inline-block;
     list-style: none;
@@ -96,7 +98,7 @@ ul {
     color: white;
 }
 
-#intro{
+#intro {
     display: inline;
     position: absolute;
     right: 200px;
@@ -105,45 +107,97 @@ ul {
     width: 500px;
 }
 
-.scotland{
+.scotland {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
 }
 
-#secondTxt{
+#secondTxt {
     text-align: center;
+    color: white;
 }
 
-hr{
+.half1 {
+    float: left;
+    width: 45%;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.half2 {
+    float: right;
+    width: 45%;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+hr {
     width: 50%;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1350px){
+    #aboutBtn {
+        position: absolute;
+        left: 55%;
+        top: 40%;
+        padding: 13px;
+        width: 220px;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+    
+    #reviewsBtn {
+        position: absolute;
+        left: 55%;
+        top: 45%;
+        width: 180px;
+        padding: 13px;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+}
+
+@media(max-width: 850px) {
     .navigator {
         width: 100%;
         margin: 0;
         text-align: center;
         font-size: 18pt;
     }
-    #reviewsBtn, #aboutBtn{
+
+    #reviewsBtn,
+    #aboutBtn {
         display: none;
     }
 
-    #intro{
+    #intro {
         display: none;
     }
 
-    .half{
-        width: 100%;
-    }
-
-    .scotland{
+    .scotland {
         width: 70%;
     }
 
-    hr{
+    hr {
         width: 80%;
+    }
+
+    .half1,
+    .half2 {
+        width: 90%;
     }
 }
