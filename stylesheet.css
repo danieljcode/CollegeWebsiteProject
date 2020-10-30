@@ -96,6 +96,7 @@ ul {
     padding: 0;
     margin: 0;
     color: white;
+    border-bottom: 1px solid white;
 }
 
 #intro {
@@ -171,6 +172,27 @@ hr {
     }
 }
 
+aside{
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid white;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    display: inline;
+}
+
+.main{
+    background-color: white;
+    width: 71%;
+    height: 200px;
+
+    position: absolute;
+    top: 120px;
+    right: 60px;
+}
+
+
 @media(max-width: 850px) {
     .navigator {
         width: 100%;
@@ -199,5 +221,9 @@ hr {
     .half1,
     .half2 {
         width: 90%;
+    }
+
+    aside{
+        display: none;
     }
 }
