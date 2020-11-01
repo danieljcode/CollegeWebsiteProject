@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    <title>Gallery - Newtonhill B&B</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="title">Newtonhill B&B</li>
+            <li class="navigator"><a href="index.html">Home</a></li>
+            <li class="navigator"><a href="about.html">About</a></li>
+            <li class="navigator current"><a href="gallery.html">Gallery</a></li>
+            <li class="navigator"><a href="reviews.html">Reviews</a></li>
+            <li class="navigator"><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <center>
+            <div class="img">
+                <img src="media/cattle-192976_1280.jpg" alt="" width="30%">
+            </div>
+
+            <div class="img">
+                <img src="media/mountains-540115_1920.jpg" alt="" width="30%">
+            </div>
+
+            <div class="img">
+                <img src="media/neist-point-913838_1920.jpg" alt="" width="30%">
+            </div>
+
+            <div class="img">
+                <img src="media/canada-1899328_1920.jpg" alt="" width="30%">
+            </div>
+
+            <div class="img">
+                <img src="media/scotland-2658360_1920.jpg" alt="" width="30%">
+            </div>
+
+            <div class="img">
+                <img src="media/scotland-974103_1920.jpg" alt="" width="30%">
+            </div>
+            <hr><br><br>
+
+            <h1>Our bed and breakfast!</h1>
+
+            <div class="mainImg">
+                <img src="media/ancient-70996_1280.jpg" alt="">
+            </div>
+        </center>
+
+
+    </div>
+
+
+    <style>
+        .mainImg{
+            width: 90%;
+            overflow: hidden;
+        }
+
+        .img {
+            width: 30%;
+            height: 300px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        img {
+            overflow: hidden;
+            transition: transform 1s ease;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img:hover {
+            transform: scale(1.15);
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+
+        }
+
+        @media(max-width: 800px){
+
+            .img{
+                width: 100%;
+            }
+
+        }
+    </style>
+</body>
+
+</html>

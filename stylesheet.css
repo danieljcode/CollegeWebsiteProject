@@ -113,6 +113,25 @@ ul {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+
+    animation-name: Bubble;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+
+}
+
+@keyframes Bubble {
+
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(1.0225);
+    }
+
 }
 
 #secondTxt {
@@ -139,10 +158,10 @@ ul {
 }
 
 hr {
-    width: 50%;
+    width: 80%;
 }
 
-@media(max-width: 1350px){
+@media(max-width: 1350px) {
     #aboutBtn {
         position: absolute;
         left: 55%;
@@ -156,7 +175,7 @@ hr {
         font-weight: bold;
         font-size: 12pt;
     }
-    
+
     #reviewsBtn {
         position: absolute;
         left: 55%;
@@ -170,28 +189,25 @@ hr {
         font-weight: bold;
         font-size: 12pt;
     }
+
+    iframe{
+        height: 550px;
+    }
 }
 
-aside{
-    width: 20%;
-    height: 100vh;
-    border-right: 1px solid white;
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    display: inline;
-}
-
-.main{
+.main {
     background-color: white;
-    width: 71%;
-    height: 200px;
-
-    position: absolute;
-    top: 120px;
-    right: 60px;
+    width: 85%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
+iframe{
+    height: 800px;
+}
 
 @media(max-width: 850px) {
     .navigator {
@@ -223,7 +239,13 @@ aside{
         width: 90%;
     }
 
-    aside{
-        display: none;
+    .main {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 95%;
+    }
+    iframe{
+        height: 400px;
     }
 }
