@@ -263,13 +263,21 @@ i.far {
         font-size: 18pt;
     }
 
+    .title{
+        display: none;
+    }
+
     #reviewsBtn,
     #aboutBtn {
         display: none;
     }
 
     #intro {
-        display: none;
+        top: 800px;
+        width: 100%;
+        left: auto;
+        right: auto;
+        text-align: center;
     }
 
     .scotland {
