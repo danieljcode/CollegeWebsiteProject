@@ -9,10 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-.title {
-    padding-left: 25px;
-}
-
 .navigator {
     display: inline-block;
     list-style: none;
@@ -23,7 +19,43 @@ body {
     text-align: center;
     font-size: 16pt;
     text-decoration: none;
+    max-height: auto;
 }
+
+.dropdown .navigator{
+    width:100%;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 155px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
 
 h3 {
     margin: 0;
@@ -84,11 +116,13 @@ a {
     display: inline-block;
     list-style: none;
     margin: 0px;
-    width: 10%;
+    width: 20%;
     padding-top: 15px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 16pt;
+    padding-left: 25px;
+
 }
 
 ul {
@@ -178,8 +212,8 @@ hr {
 
     #reviewsBtn {
         position: absolute;
-        left: 55%;
-        top: 45%;
+        left: 85%;
+        top: 40%;
         width: 180px;
         padding: 13px;
         background-color: transparent;
@@ -222,7 +256,7 @@ i.far {
 }
 
 @media(max-width: 850px) {
-    .navigator {
+    .navigator, .dropdown, .dropdown-content {
         width: 100%;
         margin: 0;
         text-align: center;
